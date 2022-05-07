@@ -1,0 +1,271 @@
+/*
+  ? Background: #101421
+  ? SemiDark: #072249
+  ? BlueDark: #274D99
+  ? colorSecondary: #517EF5
+  ? colorPrimary: #87B4FF
+*/
+
+/*
+  * NAVBAR
+*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  z-index: 200;
+  background-color: #101421;
+}
+
+.navbar__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar__logo {
+  font-size: 2.2em;
+  color: #517ef5;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar__links li {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  padding: 10px 14px;
+  border-radius: 5px;
+}
+
+.navbar__link:hover {
+  background-color: #517ef5;
+}
+
+.navbar__link-active {
+  background-color: #517ef5;
+}
+
+/* ? HERO */
+
+.hero {
+  padding-top: 80px;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__title-container {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  align-self: flex-start;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: 62px;
+}
+
+.hero--subtitle {
+  font-size: 28px;
+}
+
+.hero__image {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+}
+
+.hero__technology {
+  width: 80px;
+  position: absolute;
+  bottom: 350px;
+}
+
+.hero__technology--react {
+  transform: translateX(-160px);
+  animation-name: react;
+  animation-duration: 0.8s;
+}
+
+.hero__technology--angular {
+  transform: translate(-130px, -90px);
+  animation-name: angular;
+  animation-duration: 1s;
+}
+
+.hero__technology--laravel {
+  transform: translate(-45px, -155px);
+  width: 70px;
+  animation-name: laravel;
+  animation-duration: 1.2s;
+}
+
+.hero__technology--nodejs {
+  transform: translate(45px, -155px);
+  width: 62px;
+  animation-name: nodejs;
+  animation-duration: 1.4s;
+}
+
+.hero__technology--postgresql {
+  transform: translate(130px, -90px);
+  animation-name: postgresql;
+  animation-duration: 1.6s;
+}
+
+.hero__technology--mongodb {
+  transform: translateX(160px);
+  animation-name: mongodb;
+  animation-duration: 1.8s;
+}
+
+.about-skills {
+  position: relative;
+}
+
+.about {
+  background-color: #517ef5;
+  padding: 30px;
+  text-align: center;
+  height: 360px;
+}
+
+.about__title {
+  margin: 0;
+  color: white;
+  font-size: 38px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 5px;
+}
+
+.about__paragraph {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  width: 700px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: white;
+}
+
+.about__cv {
+  padding: 10px 14px;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  border-radius: 8px;
+  background-color: #274d99;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skills__container {
+  position: absolute;
+  display: flex;
+  top: 80%;
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.skill__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #274d99;
+  padding: 13px;
+  width: 400px;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.skill__container--backend {
+  background-color: #101421;
+}
+
+.skill__container--frontend {
+  border-radius: 15px 0 0 15px;
+}
+
+.skill__container--database {
+  border-radius: 0 15px 15px 0;
+}
+
+.skill__image {
+  width: 120px;
+  margin: 30px 0;
+}
+
+.skill__header {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.skill__title {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #87b4ff;
+}
+
+.skill__paragraph {
+  font-size: 20px;
+  width: 300px;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+.skill__list-title {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #87b4ff;
+}
+
+.skill__list-languages {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill__list-item {
+  list-style: none;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+}
+
+.contact {
+  margin-top: 700px;
+  background-color: #274d99;
+}
